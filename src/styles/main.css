@@ -1,0 +1,484 @@
+/* Estilos generales */
+:root {
+  --gold: #FFD700;
+  --dark-gold: #B8860B;
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #f0f0f0;
+  --medium-gray: #ddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+/* Header mejorado */
+.header {
+  background: linear-gradient(135deg, var(--dark-gold), var(--gold));
+  color: var(--white);
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-trophy {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  box-shadow: 0 0 15px rgba(255,215,0,0.5);
+}
+
+.header-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://eeze47eafj4.exactdn.com/es/wp/wp-content/uploads/2020/05/Cesped-artificial-para-futbol.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 6rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Featured Winners */
+.featured-section {
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.featured-section h2 {
+  text-align: center;
+  color: var(--dark-gold);
+  margin-bottom: 2rem;
+}
+
+.featured-winners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-winner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.featured-winner:hover {
+  transform: translateY(-10px);
+}
+
+.featured-winner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.winner-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: var(--white);
+  padding: 1.5rem;
+}
+
+.winner-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Cards */
+.sections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--black);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.section-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  color: var(--dark-gold);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Navegación */
+.nav {
+  background-color: var(--dark-gold);
+  padding: 1rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1.1rem;
+}
+
+.nav a:hover {
+  color: var(--gold);
+}
+
+/* Contenido principal */
+.main-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  color: var(--dark-gold);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.5rem;
+}
+
+/* Historia */
+.history-content {
+  line-height: 1.6;
+}
+
+.history-image {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  max-width: 300px;
+}
+
+.history-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.history-text h3 {
+  color: var(--dark-gold);
+  margin: 1.5rem 0 1rem;
+}
+
+.milestone-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.milestone {
+  text-align: center;
+}
+
+.milestone img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+/* Ganadores */
+.winners-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.winner-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.winner-card:hover {
+  transform: translateY(-10px);
+}
+
+.winner-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.winner-info {
+  padding: 1.5rem;
+}
+
+.winner-info h3 {
+  color: var(--dark-gold);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.year {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.team {
+  color: var(--dark-gold);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.achievement {
+  background-color: var(--light-gray);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.achievement p {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+/* Celebraciones */
+.celebration-moments {
+  margin-top: 3rem;
+}
+
+.celebration-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.celebration-card {
+  text-align: center;
+}
+
+.celebration-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Estadísticas */
+.stats-highlight {
+  margin-bottom: 3rem;
+}
+
+.records-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.record-card {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.record-number {
+  font-size: 3rem;
+  color: var(--dark-gold);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.record-detail {
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+.stats-table th {
+  background-color: var(--dark-gold);
+  color: var(--white);
+}
+
+.stats-table tr:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+.country-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.country-card {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+}
+
+.country-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-gold);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-trophy {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .featured-winners,
+  .sections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-image {
+    float: none;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+
+  .winners-gallery, .celebration-gallery, .records-grid, .country-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-table {
+    font-size: 0.9rem;
+  }
+
+  .stats-table td,
+  .stats-table th {
+    padding: 0.5rem;
+  }
+}
